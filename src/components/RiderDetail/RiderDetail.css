@@ -1,0 +1,74 @@
+.find-area {
+    margin-top: 20px;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 15px;
+}
+.find-area .search-area {
+    background-color: #EFEFEF;
+    padding: 15px;
+    border-radius: 10px;
+}
+.map {
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+.exact-location {
+    color: #fff;
+    background: #EFEFEF;
+    padding: 10px;
+    border-radius: 6px;
+}
+.location {
+    padding: 20px 30px 10px;
+    position: relative;
+    background: #FF6E40;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.location::after {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 19px;
+    width: 1px;
+    height: 32px;
+    background: #fff;
+}
+.location p {
+    padding-left: 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+.location p::after {    
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.output {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.output img {
+    width: 50px;
+    padding-right: 10px;
+}
+.output .info {
+    margin-right: 30px;
+}
+.output svg:not(:root).svg-inline--fa {
+    margin: 0 0 0 10px;
+    color: #8F8F8F;
+}
+
+

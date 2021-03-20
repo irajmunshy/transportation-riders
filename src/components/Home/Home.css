@@ -1,0 +1,30 @@
+.riders-container {
+    background: url(../../images//Bg.png) no-repeat;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: -190px;
+    padding-top: 350px;
+}
+.riders {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+
+
+@media only screen and (max-width: 557px) {
+    .riders-container {
+        height: auto;
+    }
+
+    .riders {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media all and (min-width: 558px) and (max-width: 997px) {
+    .riders {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

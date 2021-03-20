@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "BIKE",
+        "capacity": 2,
+        "price": 27,
+        "from": "",
+        "to": "",
+        "success": false,
+        "img": "https://previews.123rf.com/images/yayayoy/yayayoy1204/yayayoy120400007/13059820-red-motorcycle.jpg"
+    },
+    {
+        "id": 2,
+        "name": "CAR",
+        "price": 67,
+        "capacity": 4,
+        "from": "",
+        "to": "",
+        "success": false,
+        "img": "https://previews.123rf.com/images/zhenyakot/zhenyakot1708/zhenyakot170800002/83393277-vector-cartoon-red-car-front-view.jpg"
+    },
+    {
+        "id": 3,
+        "name": "BUS",
+        "price": 127,
+        "capacity": "28",
+        "from": "",
+        "to": "",
+        "success": false,
+        "img": "https://image.freepik.com/free-vector/red-bus-illustration_173474-60.jpg"
+    },
+    {
+        "id": 4,
+        "name": "TRAIN",
+        "price": 167,
+        "capacity": "48",
+        "from": "",
+        "to": "",
+        "success": false,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfzhwHCkB3PrXP1_La7PLh03dgevzJXEMbg&usqp=CAU"
+    }
+]

@@ -1,0 +1,17 @@
+.rider-info {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    border: 1px solid lightgray;
+}
+.rider-info:hover {
+    box-shadow: 0 0 10px 0 gray;
+}
+.rider-info img {
+    width: 150px;
+    height: 130px;
+    padding: 10px;
+}
