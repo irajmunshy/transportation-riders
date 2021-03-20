@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+// import 'bootstrap/dist/js/bootstrap.min.js';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { UserContext } from '../../App';
@@ -22,7 +22,7 @@ const Header = () => {
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <Link to="/home" class="nav-link">Home</Link>
@@ -52,6 +52,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
+        
     );
 };
 

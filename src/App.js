@@ -38,12 +38,12 @@ function App() {
           <PrivateRoute path="/userInfo">
             <UserInfo />
           </PrivateRoute>
-          <PrivateRoute path="/rider/:name">
-            <RiderDetail />
-          </PrivateRoute>
           {/* <Route path="/rider/:name">
             <RiderDetail />
           </Route> */}
+          <PrivateRoute path="/rider/:name">
+            <RiderDetail />
+          </PrivateRoute>
           <Route path="/">
             <Home />
           </Route>

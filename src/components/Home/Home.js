@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Home.css';
 import FakeData from '../FakeData/data.json';
-import Rider from '../rider/Rider';
+import Rider from '../Rider/Rider';
 
 const Home = () => {
     const [riders, setRiders] = useState([]);
