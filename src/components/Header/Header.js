@@ -7,52 +7,34 @@ import { UserContext } from '../../App';
 
 const Header = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const Email = loggedInUser.email;
+    const {name, email, isLoggedIn} = loggedInUser;
 
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12">
-                    <nav class="navbar d-flex justify-content-between custom-navbar navbar-expand-lg navbar-light">
-                        <div>
-                            <Link class="navbar-brand" to="/home">Transportation Riders</Link>
-                        </div>
-
-                        <div>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <Link to="/home" class="nav-link">Home</Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link to="/rider/BIKE" class="nav-link">Destination</Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link to="/home" class="nav-link">Blog</Link>
-                                    </li>
-                                    <li class="nav-item">
-                                        <Link to="/home" class="nav-link">Contact</Link>
-                                    </li>
-                                    {(loggedInUser.isLoggedIn && loggedInUser.email) ? 
-                                        <li className="nav-item">
-                                            <Link to="/userInfo" class="nav-link" id="custom-link">{loggedInUser.name || Email.slice(0, -10)}</Link>
-                                        </li>  
-                                        :
-                                        <li className="nav-item">
-                                            <Link to="/login" class="nav-link" id="custom-link">Log in</Link>
-                                        </li>
-                                    }
-                                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="w-100 d-flex justify-content-between custom-navbar">
+                    <div>
+                        <Link class="navbar-brand" to="/home">Transportation Riders</Link>
+                    </div>
+                    <div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <Link to="/home" class="nav-link">Home</Link>
+                                <Link to="/rider/BIKE" class="nav-link">Destination</Link>
+                                {(isLoggedIn && email) ? 
+                                        <Link to="/userInfo" class="nav-link" id="custom-link">{name || email.slice(0, -10)}</Link>
+                                    :
+                                        <Link to="/login" class="nav-link" id="custom-link">Log in</Link>
+                                }
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
-        </div>
+        </nav>
         
     );
 };

@@ -38,9 +38,6 @@ function App() {
           <PrivateRoute path="/userInfo">
             <UserInfo />
           </PrivateRoute>
-          {/* <Route path="/rider/:name">
-            <RiderDetail />
-          </Route> */}
           <PrivateRoute path="/rider/:name">
             <RiderDetail />
           </PrivateRoute>

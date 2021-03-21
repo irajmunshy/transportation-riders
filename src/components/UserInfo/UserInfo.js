@@ -34,7 +34,7 @@ const UserInfo = () => {
             <div className="row">
                 <div className="col-md-4 offset-md-4">
                     <div className="logOut">
-                        <h3>Name: {name}</h3>
+                        <h3>Name: {name || email.slice(0, -10)}</h3>
                         <h4>Email: {email}</h4>
                         <button className="w-100 form-btn" onClick={handleLogOut}>Log Out</button>
                     </div>
