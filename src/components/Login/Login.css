@@ -18,13 +18,13 @@
 .login-method input:hover {
     border-bottom: 1px solid #BEBEBE;
 }
-.login-method input[type="submit"], .logOut button {
+.login-method input[type="submit"], .logOut button, .search-btn {
     color: #fff;
     background: #FF6E40;
     border: 1px solid #BEBEBE;
     transition: all .3s;
 }
-.login-method input[type="submit"]:hover, .logOut button:hover {
+.login-method input[type="submit"]:hover, .logOut button:hover, .search-btn:hover {
     color: #FF6E40;
     background: none;
 }

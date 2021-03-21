@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/js/bootstrap.min.js';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { UserContext } from '../../App';
 
 const Header = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const Email = loggedInUser.email;
 
     return (
         <div className="container">
@@ -28,7 +29,7 @@ const Header = () => {
                                         <Link to="/home" class="nav-link">Home</Link>
                                     </li>
                                     <li class="nav-item">
-                                        <Link to="/rider" class="nav-link">Destination</Link>
+                                        <Link to="/rider/BIKE" class="nav-link">Destination</Link>
                                     </li>
                                     <li class="nav-item">
                                         <Link to="/home" class="nav-link">Blog</Link>
@@ -38,7 +39,7 @@ const Header = () => {
                                     </li>
                                     {(loggedInUser.isLoggedIn && loggedInUser.email) ? 
                                         <li className="nav-item">
-                                            <Link to="/userInfo" class="nav-link" id="custom-link">{loggedInUser.name ? loggedInUser.name : loggedInUser.email}</Link>
+                                            <Link to="/userInfo" class="nav-link" id="custom-link">{loggedInUser.name || Email.slice(0, -10)}</Link>
                                         </li>  
                                         :
                                         <li className="nav-item">

@@ -55,7 +55,7 @@ const RiderDetail = () => {
                             <label htmlFor="">Pick To</label><br/>
                             <input id="to" type="text" required className="form-control mb-3"/>
                         </div>
-                        <button className="btn w-100 btn-primary">Search</button>
+                        <button className="btn w-100 search-btn">Search</button>
                     </form>
                 }
                 </div>

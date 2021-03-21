@@ -24,7 +24,7 @@ const Login = () => {
     const history = useHistory();
     const location = useLocation();
 
-    const {from} = location.state || {from: {pathname: '/'}};
+    const {from} = location.state || {from: {pathname: '/rider/BIKE'}};
 
     const handleBlur = (event) => {
         let isFiendValid = true;
