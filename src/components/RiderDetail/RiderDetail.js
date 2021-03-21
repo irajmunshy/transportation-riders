@@ -60,7 +60,7 @@ const RiderDetail = () => {
                 }
                 </div>
 
-                <div className="map col-md-9">
+                <div className="col-md-9">
                     <Map></Map>
                 </div>
             </div>
