@@ -4,6 +4,7 @@ import './Rider.css';
 
 const Rider = (props) => {
     const {img, name} = props.rider;
+    const date = new Date().toLocaleDateString();
 
     const history = useHistory();
     const handleClick = () => {
@@ -14,6 +15,7 @@ const Rider = (props) => {
         <div onClick={() => handleClick(name)} className="rider-info">
             <img src={img} alt=""/>
             <h4>{name}</h4>
+            <h4>{date}</h4>
         </div>
     );
 };

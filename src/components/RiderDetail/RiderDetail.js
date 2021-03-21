@@ -5,11 +5,12 @@ import FakeData from '../FakeData/data.json';
 import RiderInfo from '../RiderInfo/RiderInfo';
 import Map from '../Map/Map';
 
-
 const RiderDetail = () => {
     const {name} = useParams();
     const [rider, setRider] = useState({});
     const {from, to} = rider;
+    const date = new Date().toLocaleDateString();
+    const time = new Date().toLocaleTimeString();
 
     useEffect(() => {
         const dataInfo = FakeData.find(data => data.name === name);
@@ -47,6 +48,8 @@ const RiderDetail = () => {
                     </div>
                     :
                     <form onSubmit={handleSearch} className="mb-4 search-area">
+                        <p>Current Date: {date}</p>
+                        <p>Current Time: {time}</p>
                         <div>
                             <label htmlFor="">Pick From</label><br/>
                             <input id="from" type="text" required className="form-control mb-3"/>
