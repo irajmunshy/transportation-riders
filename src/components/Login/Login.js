@@ -128,7 +128,6 @@ const Login = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-6 offset-md-3">
-                    {/* <div> */}
                         <div className="pt-5 login-method">
                             <form action="" onSubmit={handleSubmit}>
                                 <h3 className="py-3">{newUser ? 'Create an account' : 'Log in'}</h3>
@@ -166,7 +165,6 @@ const Login = () => {
                                 <button onClick={handleGoogleSignIn} className="w-100 form-btn"><span><FontAwesomeIcon icon={faGoogle} /></span>   Continue With Google</button>
                             </div>
                         </div>
-                    {/* </div> */}
                 </div>
             </div>
         </div>
