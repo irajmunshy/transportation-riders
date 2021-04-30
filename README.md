@@ -1,7 +1,11 @@
-Project Name: transportation-riders
+Title - Transportation Riders.
 
-Site Name: transportation-riders
+Live Site Link - [https://transportation-riders-app.web.app/].
 
-Site OverView: Website of travel with different vehicles. There are four options on the homepage. if you click on these, if you are logged in to the website, then you will be taken to that page and if you are not logged in, you will be taken to the login page and the site map has been used.
+OverView - 1. This is a Ride Sharing Website.
+           2. The user needs to log in to ride.
+           3. The user is given the category of riding on the homepage. Can select the ride at will.
+           4. Searching with these two where the user will go and where the user is will show the user a lot of rights.
+           5. If the user wants, he can select any right.
 
-Live Link Site: [https://transportation-riders-app.web.app/]
+Technology - HTML5, CSS3, Bootstrap5, JavaScript, React JS, Router, Firebase Authentication.
